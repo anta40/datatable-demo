@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTableDataSource, MatPaginator } from '@angular/material';
 import { MatPaginatorModule } from '@angular/material';
-import { ViewChild } from '@angular/core';
+import { AfterViewInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',

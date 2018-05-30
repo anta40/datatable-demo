@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { ViewChild } from '@angular/core';
 import { CustomMaterialModule } from "./material.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
@@ -13,7 +12,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     BrowserModule,
     BrowserAnimationsModule,
     CustomMaterialModule,
-    ViewChild
   ],
   providers: [],
   bootstrap: [AppComponent]
