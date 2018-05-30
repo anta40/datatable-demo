@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
-import {MatTableDataSource} from '@angular/material';
+import { MatTableDataSource, MatPaginator } from '@angular/material';
+import { MatPaginatorModule } from '@angular/material';
+import { ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+
+export class AppComponent implements AfterViewInit {
   title = 'app';
   displayedColumns = ['position', 'firstName', 'lastName', 'email'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
 }
 
 export interface Element {
