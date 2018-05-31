@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { MatTableDataSource, MatPaginator, MatTable } from '@angular/material';
+import { MatPaginator, MatTable } from '@angular/material';
 import { MatPaginatorModule, MatSortModule, MatSort } from '@angular/material';
+import { MatTableDataSource } from '@angular/material/table';
 import { AfterViewInit, ViewChild } from '@angular/core';
 
 @Component({
